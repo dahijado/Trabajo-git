@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * Este archivo contiene las funciones que se van a 
+ * utilizar en el sitio web
+ * 
+ * @author: David
+ */
+
+
+/**
+ * Muestra el nombre del sitio web
+ */
 
 function site_name()
 {
@@ -7,11 +18,19 @@ function site_name()
     echo $var;
 }
 
+/**
+ * Muestra la url del sitio web
+ */
+
 function site_url()
 {
     $var = config('site_url');
     echo $var;
 }
+
+/**
+ * Muestra la ruta del sitio web
+ */
 
 function site_path()
 {
@@ -19,12 +38,20 @@ function site_path()
     echo $var;
 }
 
+/**
+ * Muestra la versión del sitio web
+ */
+
 function site_version()
 {
     $var = config('version');
     echo $var;
 }
 
+/**
+ * Construye dinámicamente el menú de navegación recorriendo sus elementos
+ * @param string $sep (el separador de los elementos del menú)
+ */
 
 function nav_menu($sep = ' | ')
 {
@@ -43,6 +70,9 @@ function nav_menu($sep = ' | ')
     echo trim($nav_menu, $sep);
 }
 
+/**
+ * Muestra el título de la página a través del parámetro 'page' que se recoge a través del método GET
+ */
 
 function page_title()
 {
@@ -56,6 +86,10 @@ function page_title()
     echo  $titulo[$page];
 }
 
+/**
+ * Muestra el contenido de la página, obteniendo la ruta para volcar
+ * Si no se encuentra la página, muestra un error 404
+ */
 
 function page_content()
 {
@@ -66,6 +100,10 @@ function page_content()
     }
     echo file_get_contents($path);          // Volcar contenidos
 }
+
+/**
+ * Inicia la aplicación utilizando un template
+ */
 
 function init()
 {
