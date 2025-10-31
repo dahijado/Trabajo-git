@@ -8,4 +8,10 @@ require __DIR__ . '/includes/config.php';
 require __DIR__ . '/includes/functions.php';
 
 
+/**
+ * Inicia la aplicación usando la plantilla principal.
+ * 
+ * @see functions.php#init()
+ */
+
 init();
