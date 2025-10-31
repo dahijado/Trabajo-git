@@ -1,11 +1,22 @@
 <?php
 
 /**
- * Used to store website configuration information.
- *
+ * Almacena la información de configuración de la web
  * @var string or null
  */
+
+
 define("PATH","http://localhost/deaw");
+
+/**
+ * Devuelve el valor de configuración solicitado.
+ *
+ * Esta función establece la configuración del sitio con todos sus elementos,
+ * como el path, el nombre, la URL y el menú de navegación
+ *
+ * @param string $key
+ * @return string o null
+ */
 
 function config($key = '')
 {
