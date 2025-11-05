@@ -2,7 +2,7 @@
 * @author alvaro
 */
 /*
-*esto es otra pruebs
+*esto es otra prueba, la segfunda en este archivo
 */
 <!DOCTYPE html>
 <html>
