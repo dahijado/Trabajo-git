@@ -20,13 +20,16 @@
 
     <article>
         <h2><?php page_title(); ?></h2>
-        <?php page_content(); ?>
+        <?php page_content(); 
+        ?>
     </article>
 
     <footer>
         <small><?php echo date('Y'); ?> <?php echo "DAW2V-0613" ?>.<br><?php site_version(); ?></small>
     </footer>
-
+/*
+*comentario de alvaro lorenzo 
+*/
 </div>
 </body>
 </html>
