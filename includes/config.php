@@ -4,8 +4,6 @@
  * Almacena la información de configuración de la web
  * @var string or null
  */
-
-
 define("PATH","http://localhost/deaw");
 
 /**
@@ -17,7 +15,6 @@ define("PATH","http://localhost/deaw");
  * @param string $key
  * @return string o null
  */
-
 function config($key = '')
 {
     $config = [

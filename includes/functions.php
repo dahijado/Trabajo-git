@@ -11,7 +11,6 @@
 /**
  * Muestra el nombre del sitio web
  */
-
 function site_name()
 {
     $var = config('name');
@@ -21,7 +20,6 @@ function site_name()
 /**
  * Muestra la url del sitio web
  */
-
 function site_url()
 {
     $var = config('site_url');
@@ -31,7 +29,6 @@ function site_url()
 /**
  * Muestra la ruta del sitio web
  */
-
 function site_path()
 {
     $var = config('path');
@@ -41,7 +38,6 @@ function site_path()
 /**
  * Muestra la versión del sitio web
  */
-
 function site_version()
 {
     $var = config('version');
@@ -52,7 +48,6 @@ function site_version()
  * Construye dinámicamente el menú de navegación recorriendo sus elementos
  * @param string $sep (el separador de los elementos del menú)
  */
-
 function nav_menu($sep = ' | ')
 {
     $nav_menu = '';
@@ -73,7 +68,6 @@ function nav_menu($sep = ' | ')
 /**
  * Muestra el título de la página a través del parámetro 'page' que se recoge a través del método GET
  */
-
 function page_title()
 {
     $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'Home';
@@ -90,7 +84,6 @@ function page_title()
  * Muestra el contenido de la página, obteniendo la ruta para volcar
  * Si no se encuentra la página, muestra un error 404
  */
-
 function page_content()
 {
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
@@ -104,7 +97,6 @@ function page_content()
 /**
  * Inicia la aplicación utilizando un template
  */
-
 function init()
 {
     require config('template_path') . '/template.php';
