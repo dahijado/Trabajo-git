@@ -1,84 +1,83 @@
-/*
+/**
 * @author Alvaro_Lorenzo
-*/
-
-/* 
+*
+* 
 ------------------------------------------------------------
 ESTILOS GENERALES 
 ------------------------------------------------------------
 */
 
-/* 
-.wrap:
-Contenedor principal de toda la página.
-- Añade espacio interno (padding) para separar el contenido de los bordes.
-- Centra el texto dentro del contenedor.
-- Aplica una sombra ligera para dar sensación de relieve al bloque principal.
+/**
+*.wrap:
+*Contenedor principal de toda la página.
+*- Añade espacio interno (padding) para separar el contenido de los bordes.
+*- Centra el texto dentro del contenedor.
+*- Aplica una sombra ligera para dar sensación de relieve al bloque principal.
 */
 .wrap { 
-    padding: 25px; 
-    text-align: center; 
-    box-shadow: 0 4px 25px -4px #9da5ab; 
+padding: 25px; 
+text-align: center; 
+box-shadow: 0 4px 25px -4px #9da5ab; 
 }
 
-/* 
-article:
-Define el estilo del contenido principal de cada página.
-- padding: crea espacio vertical interno (arriba y abajo).
-- line-height: mejora la legibilidad del texto.
-- text-align: alinea el texto a la izquierda.
+/**
+*article:
+*Define el estilo del contenido principal de cada página.
+*- padding: crea espacio vertical interno (arriba y abajo).
+*- line-height: mejora la legibilidad del texto.
+*- text-align: alinea el texto a la izquierda.
 */
 article { 
-    padding: 25px 0; 
-    line-height: 150%; 
-    text-align: left; 
+padding: 25px 0; 
+line-height: 150%; 
+text-align: left; 
 }
 
-/* 
-nav .item:
-Estilo básico para los elementos del menú de navegación.
-- Quita el subrayado predeterminado de los enlaces.
+/**
+*nav .item:
+*Estilo básico para los elementos del menú de navegación.
+*- Quita el subrayado predeterminado de los enlaces.
 */
 nav .item {
-    text-decoration: none;
+text-decoration: none;
 }
 
-/* 
-nav .active:
-Aplica un estilo visual al enlace activo del menú (página actual).
-- Añade una línea inferior para destacar el enlace seleccionado.
+/** 
+*nav .active:
+*Aplica un estilo visual al enlace activo del menú (página actual).
+*- Añade una línea inferior para destacar el enlace seleccionado.
 */
 nav .active {
-    border-bottom: 1px solid;   
+border-bottom: 1px solid;   
 }
 
-/* 
-------------------------------------------------------------
-ESTILOS RESPONSIVOS (para pantallas grandes)
-------------------------------------------------------------
+/**
+*------------------------------------------------------------
+*ESTILOS RESPONSIVOS (para pantallas grandes)
+*------------------------------------------------------------
 */
 @media only screen and (min-width: 768px) {
 
-    /* 
-    article:
-    Aumenta el padding lateral en pantallas más grandes para
-    mejorar la proporción del texto.
-    */
-    article { 
-        padding: 40px; 
-    }
+/**
+*article:
+*Aumenta el padding lateral en pantallas más grandes para
+*mejorar la proporción del texto.
+*/
+article { 
+padding: 40px; 
+}
 
-    /* 
-    .wrap:
-    - Limita el ancho máximo del contenedor a 750px.
-    - Centra el contenido horizontalmente con margen automático.
-    - Ajusta el padding para dar más espacio interno.
-    */
-    .wrap { 
-        max-width: 750px; 
-        margin: 50px auto;
-        padding: 30px 40px;
-    }
+/**
+*.wrap:
+*- Limita el ancho máximo del contenedor a 750px.
+*- Centra el contenido horizontalmente con margen automático.
+*- Ajusta el padding para dar más espacio interno.
+*/
+.wrap { 
+max-width: 750px; 
+margin: 50px auto;
+padding: 30px 40px;
+}
 }
 
     
